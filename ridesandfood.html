@@ -11,192 +11,291 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="refresh" content="600">
     <meta name="keywords" content="'Theme Park' Entertainment">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Inter:wght@300&family=Oxanium:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
+
 </head>
 
 
 <!-- This body section contains the structure for all the visble content -->
 
 <body>
-    <header>
-        <h1>The Theme Park - Literally, a theme park.</h1>
-    </header>
-    <nav>
-        <ol>
-            <li><a href='index.html'>Home</a></li>
-            <li><a href='ridesandfood.html'>Rides and Food</a></li>
-            <li><a href='pricing.html'>Pricing</a></li>
-            <li><a href='about.html'>About us</a></li>
-        </ol>
-    </nav>
+    <div class="grid-container-ridesAndFood">
 
-    <div class='rfTitle'>
-        <h2>TAKE A RIDE</h2>
-    </div>
+        <!-- NAV BAR -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="ridesandfood.html">Rides & Food</a>
+            <img src=imgs/logo.png alt="logo" height="50">
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About Us</a>
+        </nav>
 
-    <div id="rfImageMap">
-        <img src="imgs/rfMap.png" alt="Ride Map" width="1024" height="628" usemap="#localMap">
-        <map name="localMap">
-            <area class="map1" shape="circle" coords="270,200,50" alt="The Corporate Link" href="#TheCorporate">
-            <area class="map1" shape="circle" coords="800,300,50" alt="The School Link" href="#TheRunawayTeenager">
-            <area class="map1" shape="circle" coords="600,500,50" alt="The Upside Down Link" href="#TheLostBoy">
-        </map>
-    </div>
+        <!-- MAP -->
+
+        <!-- <div id="rfImageMap">
+            <img src="imgs/rfMap.png" alt="Ride Map" width="100%" height="800" usemap="#localMap">
+            <map name="localMap">
+                <area class="map1" shape="circle" coords="270,200,50" alt="The Corporate Link" href="#TheCorporate">
+                <area class="map1" shape="circle" coords="800,300,50" alt="The School Link" href="#TheRunawayTeenager">
+                <area class="map1" shape="circle" coords="600,500,50" alt="The Upside Down Link" href="#TheLostBoy">
+            </map>
+        </div> -->
+
+        <div id='rfRideMainTitle'><h1>🚂 TAKE A RIDE 💨<h1></div>
+
+        <div id='rfRideItem1'>
+            <div class='rfRideTitle'>
+                <a id='TheCorporate'></a>
+                <h3>RIDE 1 ⎯ THE CORPORATE</h3>
+            </div>
+            <div class='rfRideImage'>
+                <img src='imgs/rfRideCorporate.jpeg' width=100% height="300">
+            </div>
+            <div class='rfRideDescription'>
+                <p>Welcome to Corporate World: The Ride, the most exhilarating and soul-crushing theme park experience
+                    of your life!<br><br>
+
+                    Get ready to strap in and experience the thrill of sitting in a cubicle for 8 hours a day, 5 days a
+                    week.
+                    You'll feel the rush of excitement as you file endless paperwork, attend pointless meetings, and
+                    make
+                    small
+                    talk with your co-workers about the weather. Hold on tight as you navigate the treacherous waters of
+                    office
+                    politics and try to dodge the bullets of passive-aggressive emails and snide remarks from your boss.
+                    Experience the heart-pumping excitement of staring at a computer screen for hours on end, while your
+                    eyes
+                    slowly glaze over and your soul slowly dies. And don't forget the thrill of the daily commute, as
+                    you
+                    sit in
+                    traffic for hours on end, listening to the same songs on the radio and wondering where it all went
+                    wrong.
+
+                    So come on down to Corporate World: The Ride, where the excitement never ends and the dreams go to
+                    die.
+ 
+                </p>
+            </div>
 
 
-    <div class='rfRideTitle'>
-        <a id='TheCorporate'></a>
-        <h3>RIDE#1: The Corporate</h3>
-    </div>
-    <div class='rfRideImage'>
-        <img src='imgs/rfRideCorporate.jpeg' width=680>
-    </div>
-    <div class='rfRideDescription'>
-        <p>Welcome to Corporate World: The Ride, the most exhilarating and soul-crushing theme park experience of your
-            life!
-
-            Get ready to strap in and experience the thrill of sitting in a cubicle for 8 hours a day, 5 days a week.
-            You'll feel the rush of excitement as you file endless paperwork, attend pointless meetings, and make small
-            talk with your co-workers about the weather. Hold on tight as you navigate the treacherous waters of office
-            politics and try to dodge the bullets of passive-aggressive emails and snide remarks from your boss.
-            Experience the heart-pumping excitement of staring at a computer screen for hours on end, while your eyes
-            slowly glaze over and your soul slowly dies. And don't forget the thrill of the daily commute, as you sit in
-            traffic for hours on end, listening to the same songs on the radio and wondering where it all went wrong.
-
-            So come on down to Corporate World: The Ride, where the excitement never ends and the dreams go to die.</p>
-    </div>
-
-    <i>Audiences Enjoy The Ride</i>
-
-    <div class='rfRideFeedbackImages'>
-        <iframe height="150" src="https://www.youtube.com/embed/0ohW-noAlIg"></iframe>
-        <img src='imgs/rfRideFeedbackImage.png' height=150>
-    </div>
-
-    <div class='rfRideTitle'>
-        <a id='TheRunawayTeenager'></a>
-        <h3>RIDE#2: The Runaway Teenager</h3>
-    </div>
-    <div class='rfRideImage'>
-        <img src='imgs/rfRideSchool.jpeg' width=680>
-    </div>
-    <div class='rfRideDescription'>
-        <p>Welcome to Teenage Rebellion: The Ride, the most thrilling and angst-filled experience of your life!
-
-            Get ready to buckle up and experience the rush of teenage rebellion as we take you on a wild journey through the ups and downs of adolescence. You'll feel the exhilaration of sneaking out past curfew, skipping school to go to the mall, and staying up all night talking to your crush on the phone. Hold on tight as you navigate the treacherous waters of high school cliques and try to dodge the bullets of peer pressure and social anxiety. Experience the heart-pumping excitement of your first kiss, your first love, and your first heartbreak. And don't forget the thrill of discovering your identity and finding your place in the world.
-            
-            So come on down to Teenage Rebellion: The Ride, where the excitement never ends and the drama is always high.</p>
-    </div>
-    <i>Audiences Enjoy The Ride</i>
-    <div class='rfRideFeedbackImages'>
-        <iframe height="150" src="https://www.youtube.com/embed/0ohW-noAlIg"></iframe>
-        <img src='imgs/rfRideFeedbackImage2.jpeg' height=150>
-    </div>
-
-    <div class='rfRideTitle'>
-        <a id='TheLostBoy'></a>
-        <h3>RIDE#3: The Lost Boy</h3>
-    </div>
-    <div class='rfRideImage'>
-        <img src='imgs/rfRideStrangerThing.png' width=680>
-    </div>
-    <div class='rfRideDescription'>
-        <p>Welcome to Upside Down: The Ride, the most exhilarating and terrifying theme park experience of your life!
-
-            Get ready to plunge into the unknown as we take you on a wild journey through the strange and mysterious world of the Upside Down. You'll feel the rush of excitement as you explore dark and twisting tunnels, encounter strange and terrifying creatures, and try to unravel the mysteries of this alternate dimension. Hold on tight as you navigate the treacherous waters of government conspiracies and supernatural phenomena, and try to avoid the clutches of the sinister Mind Flayer. Experience the heart-pumping excitement of using your wits and your courage to survive in a world turned upside down.
-            
-            So come on down to Upside Down: The Ride, where the excitement never ends and the things that go bump in the night are all too real.</p>
-    </div>
-    <i>Audiences Enjoy The Ride</i>
-    <div class='rfRideFeedbackImages'>
-        <iframe height="150" src="https://www.youtube.com/embed/0ohW-noAlIg"></iframe>
-        <img src='imgs/rfRideFeedbackImage3.jpeg' height=150>
-    </div>
-
-    <div class='rfTitle'>
-        <h2>TAKE A BITE</h2>
-    </div>
-
-    <div class="rfFoodMenuItem">
-        <div class='rfFoodMenuTitle'>
-            <h3><i>Special Menu ⎯</i> The Corporate ⎯ $30</h3>
+            <div class='rfRideFeedbackImages'>
+                <iframe height="250" width="70%" src="https://www.youtube.com/embed/0ohW-noAlIg"></iframe>
+                <img src='imgs/rfRideFeedbackImage.png' width="70%">
+            </div>
         </div>
-        <div class='rfFoodMenuInfo'>
-            <ul id="menu1">
-                <li>The Mundane Salad: A sad, wilted mix of iceberg lettuce, cherry tomatoes, and cucumber slices with a
-                    bland vinaigrette.
-                </li>
-                <li>The Pointless Sandwich: Two pieces of stale bread with a slice of processed cheese and a wilted
-                    lettuce
-                    leaf.
-                </li>
-                <li>The Tedious Fries: Overcooked and underseasoned potato sticks that taste like regret.
-                </li>
-                <li>The Endless Meeting Burrito: A tortilla stuffed with dull, uninspired discussion and topped with a
-                    drizzle of apathy.
-                </li>
-                <li>The Soul-sucking Smoothie: A blend of kale, spinach, and despair, with a hint of lemon to remind you
+
+        <div id='rfRideItem2'>
+            <div class='rfRideTitle'>
+                <a id='TheRunawayTeenager'></a>
+                <h3>RIDE 2 ⎯ THE RUNAWAY TEEN</h3>
+            </div>
+            <div class='rfRideImage'>
+                <img src='imgs/rfRideSchool.jpeg' width=100% height="300">
+            </div>
+            <div class='rfRideDescription'>
+                <p>Welcome to Teenage Rebellion: The Ride, the most thrilling and angst-filled experience of your life!<br><br>
+
+                    Get ready to buckle up and experience the rush of teenage rebellion as we take you on a wild journey
+                    through
+                    the ups and downs of adolescence. You'll feel the exhilaration of sneaking out past curfew, skipping
+                    school
+                    to go to the mall, and staying up all night talking to your crush on the phone. Hold on tight as you
+                    navigate the treacherous waters of high school cliques and try to dodge the bullets of peer pressure
+                    and
+                    social anxiety. Experience the heart-pumping excitement of your first kiss, your first love, and
+                    your
+                    first
+                    heartbreak. And don't forget the thrill of discovering your identity and finding your place in the
+                    world.
+
+                    So come on down to Teenage Rebellion: The Ride, where the excitement never ends and the drama is
+                    always
+                    high.
+                </p>
+            </div>
+            <div class='rfRideFeedbackImages'>
+                <iframe height="250" width="70%" src="https://www.youtube.com/embed/wxXWa3eeX_w"></iframe>
+                <img src='imgs/rfRideFeedbackImage2.jpeg' width="70%">
+            </div>
+        </div>
+
+        <div id='rfRideItem3'>
+            <div class='rfRideTitle'>
+                <a id='TheLostBoy'></a>
+                <h3>RIDE 3 ⎯ THE LOST BOY</h3>
+            </div>
+            <div class='rfRideImage'>
+                <img src='imgs/rfRideStrangerThing.png' width=100% height="300">
+            </div>
+            <div class='rfRideDescription'>
+                <p>Welcome to Upside Down: The Ride, the most exhilarating and terrifying theme park experience of your
+                    life! <br><br>
+
+                    Get ready to plunge into the unknown as we take you on a wild journey through the strange and
+                    mysterious
+                    world of the Upside Down. You'll feel the rush of excitement as you explore dark and twisting
+                    tunnels,
+                    encounter strange and terrifying creatures, and try to unravel the mysteries of this alternate
+                    dimension.
+                    Hold on tight as you navigate the treacherous waters of government conspiracies and supernatural
+                    phenomena,
+                    and try to avoid the clutches of the sinister Mind Flayer. Experience the heart-pumping excitement
                     of
-                    all the things you could be doing instead.
-                </li>
-                <li>The Burnout Brownie: A dense, dry square of chocolate that will leave you feeling as empty as your
-                    inbox.
-                </li>
-            </ul>
+                    using
+                    your wits and your courage to survive in a world turned upside down.
+
+                    So come on down to Upside Down: The Ride, where the excitement never ends and the things that go
+                    bump in
+                    the
+                    night are all too real.
+
+                </p>
+            </div>
+            <div class='rfRideFeedbackImages'>
+                <iframe height="250" width="70%" src="https://www.youtube.com/embed/iMIclVJWGao"></iframe>
+                <img src='imgs/rfRideFeedbackImage3.jpeg' width="70%">
+            </div>
         </div>
+
+        <div id='rfFoodMainTitle'><h1>🍟 TAKE A BITE 💦<h1></div>
+
+        <div id="rfFoodMenuItem1">
+            <div class='rfFoodMenuTitle'>
+                <h3>The Corporate ⎯ $30</h3>
+            </div>
+            <div class='rfFoodMenuInfo'>
+                <ul id="menu1">
+                    <li>THE MUNDANE SALAD
+                        <br><i>A sad, wilted mix of iceberg lettuce, cherry tomatoes, and cucumber slices
+                        with a bland vinaigrette.</i>
+                    </li>
+                    <li>THE POINTLESS SANDWICH 
+                        <br><i>Two pieces of stale bread with a slice of processed cheese and a wilted
+                        lettuce leaf.</i>
+                    </li>
+                    <li>THE TEDIOUS FRIES 
+                        <br><i>Overcooked and underseasoned potato sticks that taste like regret.</i>
+                    </li>
+                    <li>THE ENDLESS-MEETING BURRITO
+                        <br><i>A tortilla stuffed with dull, uninspired discussion and topped with a
+                        drizzle of apathy.</i>
+                    </li>
+                    <li>THE SOUL-SUCKING SMOOTHIE
+                        <br><i>A blend of kale, spinach, and despair, with a hint of lemon to remind
+                        you of all the things you could be doing instead.</i>
+                    </li>
+                    <li>THE BURNT-OUT BROWNIE 
+                        <br><i>A dense, dry square of chocolate that will leave you feeling as empty as
+                        your inbox.</i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="rfFoodMenuItem2">
+            <div class='rfFoodMenuTitle'>
+                <h3>The Runaway Teenager ⎯ $30</h3>
+            </div>
+            <div class='rfFoodMenuInfo'>
+                <ul id="menu2">
+                    <li>THE ESCAPE PLAN PIZZA 
+                        <br><i>A slice of pizza with all the toppings you want, because now you're in
+                        charge.</i></li>
+                    <li>THE INDEPENDENT BURGER
+                        <br><i>Build your own burger with all the fixings, just the way you like it.
+                    </i></li>
+                    <li>THE FREEDOM FRIES
+                        <br><i>Crispy fries with your choice of dipping sauce, because you can make your own
+                        decisions now.</i></li>
+                    <li>THE ADVENTURE WRAP 
+                        <br><i>A wrap filled with your choice of protein, veggies, and sauce, because life
+                        is
+                        an adventure.</i></li>
+                    <li>THE REBEL SHAKE
+                        <br><i>A thick and creamy shake in your favorite flavor, with an extra shot of
+                        rebellion.
+                    </i></li>
+                    <li>THE BREAKOUT BROWNIE
+                        <br><i>A gooey and decadent brownie that reminds you that you can have something
+                        sweet in your life, even when things are tough.</i></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="rfFoodMenuItem3">
+            <div class='rfFoodMenuTitle'>
+                <h3>The Lost Boy ⎯ $30</h3>
+            </div>
+            <div class='rfFoodMenuInfo'>
+                <ul id="menu3">
+                    <li>ELEVEN'S EGGO WAFFLE
+                        <br><i>A classic breakfast dish served with butter and syrup.</i></li>
+                    <li>DUSTIN'S MEWS NACHOS
+                        <br><i>A pile of tortilla chips topped with melted cheese, jalapenos, and salsa.
+                    </i></li>
+                    <li>HOPPER'S BURGER
+                        <br><i>A juicy beef patty topped with bacon, cheese, lettuce, and tomato, served with
+                        a
+                        side of curly fries.</i></li>
+                    <li>JOYCE'S ALPHABET SOUP
+                        <br><i>A comforting bowl of tomato soup with alphabet pasta.</i></li>
+                    <li>STEVE'S SCOOP AHOY SUNDAE
+                        <br><i>A decadent sundae with vanilla ice cream, hot fudge, whipped cream,
+                        and
+                        a cherry on top.</i></li>
+                    <li>DEMOGORGON'S DEVOUR CAKE
+                        <br><i>A rich chocolate cake with layers of cream filling and chocolate
+                        ganache, topped with a sprinkling of red sugar crystals.</i></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="normalMenu">
+            <p style="text-align: center;">Of course, we also sell normal food:</p>
+            <table>
+                <tr>
+                    <th>A very normal burger</th>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <th>An unsuspicious fish and chips</th>
+                    <td>$12</td>
+                </tr>
+                <tr>
+                    <th>A conventional French fries</th>
+                    <td>$8</td>
+                </tr>
+                <tr>
+                    <th>A totally not out-of-nowhere sushi roll</th>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <th>An expected Vietnamese banh mi</th>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <th>An "I knew it" coke</th>
+                    <td>$4</td>
+                </tr>
+                <tr>
+                    <th>A day-to-day lemonade</th>
+                    <td>Not today</td>
+                </tr>
+            </table>
+        </div>
+
+        <footer>
+            <marquee><h3>20% off all year around as it is the compensation for all the emotional damage you may encounter
+                during our rides: whether you are that employee who snoozes their alarm 10 times in the morning; that teen who
+                never get the joke cause you are the joke; or that kid who still plays D&D while all your mates grew out of it;
+                this is a very long sentence thank you for reading it you deserved a 20% discount say the code
+                "#RIDE-FORREST-RIDE"</h3>
+            </marquee>
+        </footer>
     </div>
-
-    <div class="rfFoodMenuItem">
-        <div class='rfFoodMenuTitle'>
-            <h3><i>Special Menu ⎯</i> The Runaway Teenager ⎯ $30</h3>
-        </div>
-        <div class='rfFoodMenuInfo'>
-            <ul id="menu2">
-                <li>The Escape Plan Pizza: A slice of pizza with all the toppings you want, because now you're in
-                    charge.</li>
-                <li>The Independent Burger: Build your own burger with all the fixings, just the way you like it.</li>
-                <li>The Freedom Fries: Crispy fries with your choice of dipping sauce, because you can make your own
-                    decisions now.</li>
-                <li>The Adventure Wrap: A wrap filled with your choice of protein, veggies, and sauce, because life is
-                    an adventure.</li>
-                <li>The Rebel Shake: A thick and creamy shake in your favorite flavor, with an extra shot of rebellion.
-                </li>
-                <li>The Breakout Brownie: A gooey and decadent brownie that reminds you that you can have something
-                    sweet in your life, even when things are tough.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="rfFoodMenuItem">
-        <div class='rfFoodMenuTitle'>
-            <h3><i>Special Menu ⎯</i> The Lost Boy ⎯ $30</h3>
-        </div>
-        <div class='rfFoodMenuInfo'>
-            <ul id="menu3">
-                <li>Eleven's Eggo Waffles: A classic breakfast dish served with butter and syrup.</li>
-                <li>Dustin's Mews Nachos: A pile of tortilla chips topped with melted cheese, jalapenos, and salsa.</li>
-                <li>Hopper's Burger: A juicy beef patty topped with bacon, cheese, lettuce, and tomato, served with a side of curly fries.</li>
-                <li>Joyce's Alphabet Soup: A comforting bowl of tomato soup with alphabet pasta.</li>
-                <li>Steve's Scoops Ahoy Sundae: A decadent sundae with vanilla ice cream, hot fudge, whipped cream, and a cherry on top.</li>
-                <li>Demogorgon's Devour Cake: A rich chocolate cake with layers of cream filling and chocolate ganache, topped with a sprinkling of red sugar crystals.</li>
-            </ul>
-        </div>
-    </div>
-
-    Of course, we also sell normal food:
-
-    <table>
-        <tr><th>A very normal burger</th><td>$10</td></tr>
-        <tr><th>An unsuspicious fish and chips</th><td>$12</td></tr>
-        <tr><th>A conventional French fries</th><td>$8</td></tr>
-        <tr><th>A totally not out-of-nowhere sushi roll</th><td>$10</td></tr>
-        <tr><th>An expected Vietnamese banh mi</th><td>$10</td></tr>
-        <tr><th>An "I knew it" coke</th><td>$4</td></tr>
-        <tr><th>A day-to-day lemonade</th><td>Not today</td></tr>
-    </table>
-
-    <br>
-
-    <marquee>20% off all year around as it is the compensation for all the emotional damage you may encounter during our rides: whether you are that employee who snoozes their alarm 10 times in the morning; that teen who never get the joke cause you are the joke; or that kid who still plays D&D while all your mates grew out of it; this is a very long sentence thank you for reading it you deserved a 20% discount say the code "#RIDE-FORREST-RIDE"</marquee>
-
 </body>

@@ -1,0 +1,249 @@
+/* -------------------------- COMMON CSS -------------------------- */
+
+body{
+    background: white;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Oxanium', cursive;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+h2 {
+    font-family: 'Oxanium', cursive;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: darkcyan;
+}
+
+h3 {
+    font-family: 'Oxanium', cursive;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+p, th, tr {
+    font-family: 'Inter', sans-serif;
+    font-size:14px;
+    line-height: 20px;
+}
+
+ul {
+    font-family: 'Inter', sans-serif;
+    font-size:14px;
+    line-height: 20px;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+/* -------------------------- NAV -------------------------- */
+
+nav {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    width:100%;
+}
+
+nav a:hover {
+    text-shadow: 0 0 1px #48abe0;
+}
+
+nav a {
+    padding: 15px;
+    text-decoration: none;
+    color: darkcyan;
+}
+
+nav img {
+
+    width: 80px;
+    height: 100px;
+}
+
+/* -------------------------- index.html CSS -------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+/* div {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    float: none;
+} */
+
+/* Using id or class name instead of div to avoid changes that applied to all the div on the website */
+#indexFeatureRide {
+    text-align: center;
+}
+
+#gallery {
+    text-align:center;
+}
+
+
+.icons {
+    padding: 10px;
+}
+
+table {
+    /* text-align: center; */
+    /* width: 70%; */
+    margin: auto;
+}
+
+
+.column {
+    float: left;
+    width: 33%;
+    padding: 1px;
+    justify-content: center;
+    margin: 1px;
+}
+
+.row {
+    text-align:center;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    align-content: center;
+}
+
+.overview {
+    text-align: center;
+    width: 100%;
+    padding: 20px 200px 20px 200px;
+    font-size: 20px;
+}
+
+.featured img {
+    padding: 15px;
+}
+
+/* -------------------------- Rides&Food.html CSS -------------------------- */
+
+nav {grid-area: nav;}
+#rfImageMap {grid-area: map;}
+
+#rfRideMainTitle {grid-area: ride;}
+#rfRideItem1 {grid-area: rideItem1;}
+#rfRideItem2 {grid-area: rideItem2;}
+#rfRideItem3 {grid-area: rideItem3;}
+
+#rfFoodMainTitle {grid-area: food;}
+#rfFoodMenuItem1 {grid-area: foodItem1;}
+#rfFoodMenuItem2 {grid-area: foodItem2;}
+#rfFoodMenuItem3 {grid-area: foodItem3;}
+
+#normalMenu {grid-area: normalMenu;}
+footer {grid-area: footer;}
+
+.grid-container-ridesAndFood {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+        'nav nav nav nav nav nav'
+        'map map map map map map'
+        'ride ride ride ride ride ride'
+        'rideItem1 rideItem1 rideItem2 rideItem2 rideItem3 rideItem3'
+        'food food food food food food'
+        'foodItem1 foodItem1 foodItem2 foodItem2 foodItem3 foodItem3'
+        'normalMenu normalMenu normalMenu normalMenu normalMenu normalMenu'
+        'footer footer footer footer footer footer';
+    background-color: white;
+    width:100%;
+}
+
+#rfRideMainTitle{
+    text-align: center;
+    background-color:rgb(226, 59, 26);
+    color: white;
+    margin: 10px;
+    padding:10px;
+    /* border:dashed; */
+    border-radius: 30px;
+}
+
+.rfRideTitle{
+    text-align: center;
+}
+
+[id^=rfRideItem] {
+    margin: 10px;
+    padding:10px;
+    border: dashed;
+    border-radius: 30px;
+}
+
+[id^=rfRideItem]:hover{
+    box-shadow: 0px 5px 7px 2px #48abe0;
+    border: none;
+    border-color: rgb(0, 0, 183);
+    color: white;
+    background-color: rgb(226, 59, 26);
+    /* transform: translateY(-5px); */
+  }
+
+.rfRideFeedbackImages {
+    text-align:center;
+}
+
+#rfFoodMainTitle{
+    text-align: center;
+    margin: 10px;
+    padding:10px;
+    /* border:dashed; */
+    border-radius: 30px;
+    background-color:rgb(226, 59, 26);
+    color: white;
+}
+
+.rfFoodMenuTitle {
+    text-align: center;
+}
+
+[id^=rfFoodMenuItem] {
+    margin: 10px;
+    padding: 10px 20px 10px 10px;
+    border: dashed;
+    border-radius: 30px;
+}
+
+[id^=rfFoodMenuItem]:hover{
+    box-shadow: 0px 5px 7px 2px rgb(226, 59, 26);
+    border: none;
+    /* border-color: rgb(0, 0, 183); */
+    /* color: white;
+    background-color: rgb(226, 59, 26); */
+    /* transform: translateY(-5px); */
+  }
+
+#normalMenu {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+footer {
+    margin: auto;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+marquee {
+    background-color: rgb(226, 59, 26);
+    color:white;
+    border-radius:30px;
+}

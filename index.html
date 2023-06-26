@@ -1,89 +1,109 @@
 <!DOCTYPE>
-<head>
-<title>Theme Park Homepage</title>
 
+<head>
+    <title>The Theme Park</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Theme Park Website">
+    <meta name="author" content="Team 46 Group 6">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="600">
+    <meta name="keywords" content="'Theme Park' Entertainment">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Inter:wght@300&family=Oxanium:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
 </head>
 
 <body>
 
-<!--navigation menu-->
-<nav>
-    <a href="index.html" >Home</a> 
-    <a href="ridesandfood.html" >Rides and Food</a>  
-    <img src=imgs/logo.png alt="logo" height="50" >
-    <a href="pricing.html" >Pricing</a> 
-    <a href="about.html" >About Us</a>  
-</nav>       
-    
-<!--main banner-->
-<div>
-    <img src="imgs/banner.jpg" alt="banner" width="90%" height="400">
-</div>
-    
-<!--overview-->
-<div>
-    <p> this is a short description</p>    
-</div>
-    
-    
-<!--rides - divided into headline and the rides-->
-<div>
-    <h2>Featured Rides</h2>
+    <!--navigation menu-->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="ridesandfood.html">Rides & Food</a>
+        <img src=imgs/logo.png alt="logo" height="50">
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About Us</a>
+    </nav>
 
-    <section>
-        <img src="imgs/rfRideCorporate.jpeg" width="30%" height="250">
-        <img src="imgs/rfRideSchool.jpeg" width="30%" height="250">
-        <img src="imgs/rfRideStrangerThing.png" width="30%" height="250">
-    </section>
-</div>
-    
-    
-<!--important info - divided into headline and the info-->
+    <!--main banner-->
+    <div class='indexBanner'>
+        <img class="center" src="imgs/banner.jpg" alt="banner" width="100%" height="400">
+    </div>
 
-<div>
-    <h2>Important info</h2>
-    
-    <section>
-    
-    <figure>
-        <img src="imgs/acssesibilty.png" width="200" height="200">
-        
-        <figcaption>Accessibility</figcaption>
+    <!--overview-->
+    <div class="overview">
+        <p> Welcome to The Theme Park, where adventure awaits at every turn. Dive into a world of thrilling rides,
+            captivating shows, and enchanting experiences for visitors of all ages. From adrenaline-pumping roller
+            coasters to immersive themed lands, we offer endless excitement and cherished memories. Join us as we embark
+            on an unforgettable journey filled with laughter, magic, and the joy of shared experiences. Start planning
+            your visit today and get ready to create unforgettable moments at The Theme Park.</p>
+    </div>
 
-    </figure>
-    
-    <figure>
-        <img src="imgs/parking.png" width="200" height="200">
-        
-        <figcaption>A free paking lot is located near the main entrance</figcaption>
 
-    </figure>
-    
-    <figure>
-        <img src="imgs/location.png" width="200" height="200">
-        
-        <figcaption><address>9th Nowhere st., Neverland</address></figcaption>
+    <!--rides - divided into headline and the rides-->
+    <div id="indexFeatureRide">
+        <h2>Featured Rides</h2>
+        <section>
+            <img src="imgs/rfRideCorporate.jpeg" width="25%" height="250">
+            <img src="imgs/rfRideSchool.jpeg" width="25%" height="250">
+            <img src="imgs/rfRideStrangerThing.png" width="25%" height="250">
+        </section>
+    </div>
 
-    </figure>
-        
-    </section>
 
-</div>
-    
-<!--gallery - divided into headline and images-->
+    <!--important info - divided into headline and the info-->
 
-<div>
-    <h2>Gallery</h2>
+    <div class="row">
+        <h2>Important info</h2>
 
-    <section>
-        <img src="imgs/ride1.jpg" width="20%" height="250">
-        <img src="imgs/ride2.jpg" width="20%" height="250">
-        <img src="imgs/ride3.jpg" width="20%" height="250">
-        <img src="imgs/ride3.jpg" width="20%" height="250">
 
-    </section>
-</div>
-    
+        <figure class="column">
+            <img src="imgs/acssesibilty.png" width="200" height="200">
+            <figcaption>Accessibility</figcaption>
+
+        </figure>
+
+        <figure class="column">
+            <img src="imgs/parking.png" width="200" height="200">
+            <figcaption>A free paking lot is located near the main entrance</figcaption>
+
+        </figure>
+
+        <figure class="column">
+            <img src="imgs/location.png" width="200" height="200">
+            <figcaption>
+                <address>9th Nowhere st., Neverland</address>
+            </figcaption>
+
+        </figure>
+
+
+    </div>
+
+
+    <!--gallery - divided into headline and images-->
+
+    <div id='gallery'>
+        <h2>Gallery</h2>
+
+        <section>
+            <img src="imgs/ride1.jpg" width="20%" height="250">
+            <img src="imgs/ride2.jpg" width="20%" height="250">
+            <img src="imgs/ride3.jpg" width="20%" height="250">
+            <img src="imgs/ride3.jpg" width="20%" height="250">
+
+        </section>
+
+        <section>
+            <img src="imgs/ride1.jpg" width="20%" height="250">
+            <img src="imgs/ride2.jpg" width="20%" height="250">
+            <img src="imgs/ride3.jpg" width="20%" height="250">
+            <img src="imgs/ride3.jpg" width="20%" height="250">
+
+        </section>
+    </div>
+
 
 
 </body>
