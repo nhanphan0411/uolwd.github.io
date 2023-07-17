@@ -11,7 +11,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Inter:wght@300&family=Oxanium:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Inter:wght@300&family=Oxanium:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
 </head>
 
@@ -23,17 +25,21 @@
         <a href="ridesandfood.html">Rides & Food</a>
         <img src=imgs/logo.png alt="logo" height="50">
         <a href="pricing.html">Pricing</a>
-        <a href="about.html">About Us</a>
+        <a href="about.html">Contact</a>
     </nav>
 
     <!--main banner-->
     <div class='indexBanner'>
-        <img class="center" src="imgs/banner.jpg" alt="banner" width="100%" height="400">
+        <img class="center" src="imgs/indexLandingBanner.jpeg" alt="a roller coaster in blue sky background"
+            width="100%" height="700">
     </div>
 
     <!--overview-->
-    <div class="overview">
-        <p> Welcome to The Theme Park, where adventure awaits at every turn. Dive into a world of thrilling rides,
+    <div class="indexOverview">
+            <h3>Welcome to The Theme Park, where adventure awaits at every turn.</h3>
+            <p>
+            <br>
+            Dive into a world of thrilling rides,
             captivating shows, and enchanting experiences for visitors of all ages. From adrenaline-pumping roller
             coasters to immersive themed lands, we offer endless excitement and cherished memories. Join us as we embark
             on an unforgettable journey filled with laughter, magic, and the joy of shared experiences. Start planning
@@ -43,67 +49,68 @@
 
     <!--rides - divided into headline and the rides-->
     <div id="indexFeatureRide">
-        <h2>Featured Rides</h2>
-        <section>
-            <img src="imgs/rfRideCorporate.jpeg" width="25%" height="250">
-            <img src="imgs/rfRideSchool.jpeg" width="25%" height="250">
-            <img src="imgs/rfRideStrangerThing.png" width="25%" height="250">
-        </section>
+        <div class="indexTitle">
+            <h1>Featured Rides</h1>
+        </div>
+
+        <div id="indexFreatureRideImgs">
+            <img class='indexImage' src="imgs/rfRideCorporate.jpeg" alt="Corporate Ride Sample Image" width="25%"
+                height="250">
+            <img class='indexImage' src="imgs/rfRideSchool.jpeg" alt="School Ride Sample Image" width="25%"
+                height="250">
+            <img class='indexImage' src="imgs/rfRideStrangerThing.png" alt="Stranger Thing Ride Sample Image"
+                width="25%" height="250">
+        </div>
     </div>
 
 
     <!--important info - divided into headline and the info-->
 
-    <div class="row">
-        <h2>Important info</h2>
+    <div id="indexInfo">
+        <div class="indexTitle">
+            <h1>Important Info</h1>
+        </div>
+        <div id="indexInfoContent">
+            <figure class="indexInfoCol">
+                <img src="imgs/indexAcssesibilty.png" alt="Accessibility Logo" width="200" height="200">
+                <figcaption>Accessibility</figcaption>
+            </figure>
 
+            <figure class="indexInfoCol">
+                <img src="imgs/indexParking.png" alt="Parking Logo" width="200" height="200">
+                <figcaption>A free paking lot is located near the main entrance</figcaption>
+            </figure>
 
-        <figure class="column">
-            <img src="imgs/acssesibilty.png" width="200" height="200">
-            <figcaption>Accessibility</figcaption>
+            <figure class="indexInfoCol">
+                <img src="imgs/indexLocation.png" alt="Location Logo" width="200" height="200">
+                <figcaption>
+                    <address>9th Nowhere st., Neverland</address>
+                </figcaption>
 
-        </figure>
-
-        <figure class="column">
-            <img src="imgs/parking.png" width="200" height="200">
-            <figcaption>A free paking lot is located near the main entrance</figcaption>
-
-        </figure>
-
-        <figure class="column">
-            <img src="imgs/location.png" width="200" height="200">
-            <figcaption>
-                <address>9th Nowhere st., Neverland</address>
-            </figcaption>
-
-        </figure>
-
-
+            </figure>
+        </div>
     </div>
 
 
     <!--gallery - divided into headline and images-->
 
-    <div id='gallery'>
-        <h2>Gallery</h2>
+    <div id='indexGallery'>
+        <div class="indexTitle">
+            <h1>Gallery</h1>
+        </div>
 
-        <section>
-            <img src="imgs/ride1.jpg" width="20%" height="250">
-            <img src="imgs/ride2.jpg" width="20%" height="250">
-            <img src="imgs/ride3.jpg" width="20%" height="250">
-            <img src="imgs/ride3.jpg" width="20%" height="250">
+        <div>
+            <img class='indexImage' src="imgs/gallery/gallery%20(1).jpg" width="20%" height="250">
+            <img class='indexImage' src="imgs/gallery/gallery%20(2).jpg" width="20%" height="250">
+            <img class='indexImage' src="imgs/gallery/gallery%20(3).jpg" width="20%" height="250">
+            <img class='indexImage' src="imgs/gallery/gallery%20(4).jpg" width="20%" height="250">
+        </div>
 
-        </section>
-
-        <section>
-            <img src="imgs/ride1.jpg" width="20%" height="250">
-            <img src="imgs/ride2.jpg" width="20%" height="250">
-            <img src="imgs/ride3.jpg" width="20%" height="250">
-            <img src="imgs/ride3.jpg" width="20%" height="250">
-
-        </section>
+        <div>
+            <img class='indexImage' src="imgs/gallery/gallery%20(5).jpg" width="20%" height="250">
+            <img class='indexImage' src="imgs/gallery/gallery%20(6).jpg" width="20%" height="250">
+            <img class='indexImage' src="imgs/gallery/gallery%20(7).jpg" width="20%" height="250">
+            <img class='indexImage' src="imgs/gallery/gallery%20(8).png" width="20%" height="250">
+        </div>
     </div>
-
-
-
 </body>

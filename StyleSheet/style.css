@@ -1,6 +1,6 @@
 /* -------------------------- COMMON CSS -------------------------- */
 
-body{
+body {
     background: white;
     height: 100%;
 }
@@ -25,20 +25,33 @@ h3 {
     line-height: 30px;
 }
 
-p, th, tr {
+p,
+span,
+th,
+tr,
+figcaption,
+address {
     font-family: 'Inter', sans-serif;
-    font-size:14px;
+    font-size: 14px;
     line-height: 20px;
 }
 
 ul {
     font-family: 'Inter', sans-serif;
-    font-size:14px;
+    font-size: 14px;
     line-height: 20px;
 }
 
 li {
     padding-bottom: 10px;
+}
+
+img {
+    object-fit: cover;
+}
+
+table {
+    margin: auto;
 }
 
 /* -------------------------- NAV -------------------------- */
@@ -48,7 +61,7 @@ nav {
     padding-bottom: 10px;
     font-size: 25px;
     font-family: 'Oleo Script Swash Caps', cursive;
-    width:100%;
+    width: 100%;
 }
 
 nav a:hover {
@@ -62,7 +75,6 @@ nav a {
 }
 
 nav img {
-
     width: 80px;
     height: 100px;
 }
@@ -73,35 +85,49 @@ nav img {
     box-sizing: border-box;
 }
 
-/* div {
-    text-align: center;
-    width: 100%;
-    margin: auto;
-    float: none;
-} */
-
-/* Using id or class name instead of div to avoid changes that applied to all the div on the website */
 #indexFeatureRide {
     text-align: center;
 }
 
-#gallery {
-    text-align:center;
+.indexTitle {
+    text-align: center;
+    background-color: rgb(226, 59, 26);
+    color: white;
+    margin: 5px 80px 5px 80px;
+    padding: 3px;
+    /* border:dashed; */
+    border-radius: 30px;
 }
 
+.indexTitle:hover {
+    background-color: white;
+    color: rgb(226, 59, 26);
+    border: dashed;
+}
 
-.icons {
+#indexFreatureRideImgs {
+    padding: 20px;
+}
+
+.indexImage {
+    padding: 5px;
+}
+
+.indexImage:hover {
+    border-radius: 30px;
+    border: dotted;
+    border-color: rgb(226, 59, 26);
+}
+
+#indexGallery {
+    text-align: center;
+}
+
+#indexInfoContent {
     padding: 10px;
 }
 
-table {
-    /* text-align: center; */
-    /* width: 70%; */
-    margin: auto;
-}
-
-
-.column {
+.indexInfoCol {
     float: left;
     width: 33%;
     padding: 1px;
@@ -109,46 +135,73 @@ table {
     margin: 1px;
 }
 
-.row {
-    text-align:center;
+#indexInfo {
+    text-align: center;
 }
 
-/* Clear floats after image containers */
-.row::after {
+#indexInfo::after {
     content: "";
     clear: both;
     display: table;
     align-content: center;
 }
 
-.overview {
+.indexOverview {
     text-align: center;
     width: 100%;
     padding: 20px 200px 20px 200px;
     font-size: 20px;
 }
 
-.featured img {
-    padding: 15px;
-}
-
 /* -------------------------- Rides&Food.html CSS -------------------------- */
 
-nav {grid-area: nav;}
-#rfImageMap {grid-area: map;}
+nav {
+    grid-area: nav;
+}
 
-#rfRideMainTitle {grid-area: ride;}
-#rfRideItem1 {grid-area: rideItem1;}
-#rfRideItem2 {grid-area: rideItem2;}
-#rfRideItem3 {grid-area: rideItem3;}
+#rfImageMap {
+    grid-area: map;
+}
 
-#rfFoodMainTitle {grid-area: food;}
-#rfFoodMenuItem1 {grid-area: foodItem1;}
-#rfFoodMenuItem2 {grid-area: foodItem2;}
-#rfFoodMenuItem3 {grid-area: foodItem3;}
+#rfRideMainTitle {
+    grid-area: ride;
+}
 
-#normalMenu {grid-area: normalMenu;}
-footer {grid-area: footer;}
+#rfRideItem1 {
+    grid-area: rideItem1;
+}
+
+#rfRideItem2 {
+    grid-area: rideItem2;
+}
+
+#rfRideItem3 {
+    grid-area: rideItem3;
+}
+
+#rfFoodMainTitle {
+    grid-area: food;
+}
+
+#rfFoodMenuItem1 {
+    grid-area: foodItem1;
+}
+
+#rfFoodMenuItem2 {
+    grid-area: foodItem2;
+}
+
+#rfFoodMenuItem3 {
+    grid-area: foodItem3;
+}
+
+#normalMenu {
+    grid-area: normalMenu;
+}
+
+footer {
+    grid-area: footer;
+}
 
 .grid-container-ridesAndFood {
     display: grid;
@@ -163,50 +216,50 @@ footer {grid-area: footer;}
         'normalMenu normalMenu normalMenu normalMenu normalMenu normalMenu'
         'footer footer footer footer footer footer';
     background-color: white;
-    width:100%;
+    width: 100%;
 }
 
-#rfRideMainTitle{
+#rfRideMainTitle {
     text-align: center;
-    background-color:rgb(226, 59, 26);
+    background-color: rgb(226, 59, 26);
     color: white;
     margin: 10px;
-    padding:10px;
+    padding: 10px;
     /* border:dashed; */
     border-radius: 30px;
 }
 
-.rfRideTitle{
+.rfRideTitle {
     text-align: center;
 }
 
 [id^=rfRideItem] {
     margin: 10px;
-    padding:10px;
+    padding: 10px;
     border: dashed;
     border-radius: 30px;
 }
 
-[id^=rfRideItem]:hover{
+[id^=rfRideItem]:hover {
     box-shadow: 0px 5px 7px 2px #48abe0;
     border: none;
     border-color: rgb(0, 0, 183);
     color: white;
     background-color: rgb(226, 59, 26);
     /* transform: translateY(-5px); */
-  }
-
-.rfRideFeedbackImages {
-    text-align:center;
 }
 
-#rfFoodMainTitle{
+.rfRideFeedbackImages {
+    text-align: center;
+}
+
+#rfFoodMainTitle {
     text-align: center;
     margin: 10px;
-    padding:10px;
+    padding: 10px;
     /* border:dashed; */
     border-radius: 30px;
-    background-color:rgb(226, 59, 26);
+    background-color: rgb(226, 59, 26);
     color: white;
 }
 
@@ -221,14 +274,14 @@ footer {grid-area: footer;}
     border-radius: 30px;
 }
 
-[id^=rfFoodMenuItem]:hover{
+[id^=rfFoodMenuItem]:hover {
     box-shadow: 0px 5px 7px 2px rgb(226, 59, 26);
     border: none;
     /* border-color: rgb(0, 0, 183); */
     /* color: white;
     background-color: rgb(226, 59, 26); */
     /* transform: translateY(-5px); */
-  }
+}
 
 #normalMenu {
     padding-top: 30px;
@@ -244,6 +297,247 @@ footer {
 
 marquee {
     background-color: rgb(226, 59, 26);
-    color:white;
-    border-radius:30px;
+    color: white;
+    border-radius: 30px;
+}
+
+/* -------------------------- pricing.html CSS -------------------------- */
+
+#pricing-h1 {
+    grid-area: p-h1;
+}
+
+#package1 {
+    grid-area: pack1;
+}
+
+#package2 {
+    grid-area: pack2;
+}
+
+#package3 {
+    grid-area: pack3;
+}
+
+.grid-container-pricing {
+    display: grid;
+    grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+    grid-template-areas:
+        'nav nav nav nav nav nav'
+        'p-h1 p-h1 p-h1 p-h1 p-h1 p-h1'
+        'pack1 pack1 pack2 pack2 pack3 pack3';
+    background-color: white;
+    width: 100%;
+}
+
+
+[id^=package] {
+    margin: 10px;
+    padding: 10px;
+    border: dashed;
+    border-color: rgb(226, 59, 26);
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    height: 550px;
+    background-image: linear-gradient(to bottom right, rgb(226, 59, 26), darkcyan, );
+    background
+}
+
+#pricing-h1 {
+    text-align: center;
+}
+
+.order-button {
+    background-color: rgb(226, 59, 26);
+    color: white;
+    padding: 20px;
+    border-radius: 25px;
+    width: 3cm;
+    height: 1cm;
+    line-height: 0px;
+    border: none;
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    right: 30%;
+    box-shadow: 0px 0px 4px 4px rgb(226, 59, 26, 60);
+    ;
+}
+
+.order-button:hover {
+    background-color: white;
+    color: rgb(226, 59, 26);
+    border: solid;
+    border-color: rgb(226, 59, 26);
+}
+
+[id^=package] p {
+    color: black;
+    font-size: 15px;
+}
+
+[id^=package] ul {
+    margin: 30px;
+}
+
+
+#pricing-h1 {
+    text-align: center;
+    background-color: rgb(226, 59, 26);
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+p.price {
+    font-size: 30px;
+    color: rgb(226, 59, 26);
+    position: absolute;
+    bottom: 13%;
+    left: 20%;
+    right: 20%;
+}
+
+hr {
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+    right: 15%;
+}
+
+p.pp {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    right: 15%;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: '✓';
+    padding: 5px;
+    margin-left: -40px;
+}
+
+/* -------------------------- about.html CSS -------------------------- */
+
+.contact_formItem_ttl {
+    color: #999;
+    font-size: 12px;
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.contact_formItem_body {
+    position: relative;
+    margin: 0 0 45px;
+}
+
+dd {
+    display: block;
+    margin-inline-start: 40px;
+}
+
+.contact_formItem_select_wrap {
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, .2);
+}
+
+.contact_formItem_select {
+    border: 1px dotted;
+    padding: 0 15px;
+    background: none;
+    border-radius: 0;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    outline: 0;
+    font-size: 13px;
+    position: relative;
+    z-index: 2;
+}
+
+.contact_formItem_input {
+    display: block;
+    padding: 12px 15px;
+    background: white;
+    font-size: 13px;
+    color: black;
+    border: 1px dotted black;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact_formItem_textarea {
+    display: block;
+    padding: 12px 15px;
+    background: white;
+    font-size: 13px;
+    color: black;
+    border: 1px dotted black;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact_formItem_btn {
+    border: 1px solid #fff;
+    background: #000;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 18px 70px;
+    letter-spacing: .02em;
+    text-indent: 0.02em;
+    transition-duration: 0.36s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-delay: 0s;
+    transition-property: background;
+}
+
+.aboutInfo_image {
+    padding: 5px;
+    grid-area: infoImg;
+}
+
+.aboutInfo_image:hover {
+    border-radius: 30px;
+    border: dotted;
+    border-color: rgb(226, 59, 26);
+}
+
+.leftCol {
+    float: left;
+    padding: 10px;
+    width: 30%;
+}
+
+.rightCol {
+    float: left;
+    padding: 10px;
+    width: 70%;
+    padding: 0 0 0 20%;
+}
+
+.grid-container-about {
+    margin: 10px 20% 10px 20%;
+}
+
+.grid-container-about:after {
+    content: "";
+    display: table;
+    clear: both;
 }

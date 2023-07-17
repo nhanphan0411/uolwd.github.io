@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- This head section contains all the invisible information about the page -->
-
 <head>
     <title>The Theme Park</title>
     <meta charset="utf-8">
@@ -11,38 +9,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="refresh" content="600">
     <meta name="keywords" content="'Theme Park' Entertainment">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Inter:wght@300&family=Oxanium:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
+
 </head>
 
-
-<!-- This body section contains the structure for all the visble content -->
-
 <body>
-    <header>
-        <h1>The Theme Park - Literally, a theme park.</h1>
-    </header>
+    <!-- NAV BAR -->
     <nav>
-        <ol>
-            <li><a href='index.html'>Home</a></li>
-            <li><a href='ridesandfood.html'>Rides and Food</a></li>
-            <li><a href='pricing.html'>Pricing</a></li>
-            <li><a href='about.html'>About us</a></li>
-        </ol>
+        <a href="index.html">Home</a>
+        <a href="ridesandfood.html">Rides & Food</a>
+        <img src=imgs/logo.png alt="logo" height="50">
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">Contact</a>
     </nav>
-	
-	<div>
-		<img src="imgs/banner.jpg" alt="banner" width="100%" height="200">
-	</div>
-	
-	<footer>
-        <div id="fpcontactInformation">
-			<ul>
-				<li id="contact">Contact Us:</li>
-				<li id="name">Jane Doe/John Smith</li>
-				<li id="email"><a href="management_email">the_managers@thethemepark.com</a></li>
-				<li id="phone">Phone number: +999 01 23456789</li>
-			</ul>
-        </div>
-    </footer>
 
+    <div class="grid-container-about">
+        <div class='leftCol'>
+            <img src="imgs/aboutUs.jpeg" class="aboutInfo_image">
+            <div class="aboutInfo_text">
+                <p><b>The Theme Park: Literally, A Theme Park </b>is an entertainment collective made by former
+                    corporate workers
+                    who
+                    are (obviously) fed up with the corporate life.
+                    The Theme Park is made for adult. We hope everyone can have a good laugh from the most mundane thing
+                    in
+                    the
+                    world: No high expectation, no overtime, no superficial.
+                    <br><br>We are everywhere: <br>Saigon / Tokyo / New York / London / Tbilisi / Austin.
+                </p>
+            </div>
+        </div>
+
+        <div class="rightCol">
+            <section id="aboutContact">
+                <h1 style="color:rgb(226, 59, 26)"><b>☎️ Contact</b></h1>
+                <form id="contactForm">
+                    <dl class="contact_formItem">
+                        <dt class="contact_formItem_ttl"><span>Qtype</span></dt>
+                        <dd class="contact_formItem_body">
+                            <div class="contact_formItem_select_wrap">
+                                <select name="qtype" class="contact_formItem_select">
+                                    <option value="Default">Please select</option>
+                                    <option value="About Entry/Ticket">About Entry/Ticket</option>
+                                    <option value="About New Project">About New Project</option>
+                                    <option value="About Interview/Press">About Interview/Press</option>
+                                    <option value="About Career/Internship">About Career/Internship</option>
+                                </select>
+                            </div>
+                        </dd>
+                    </dl>
+
+                    <dl class="contact_formItem">
+                        <dt class="contact_formItem_ttl">
+                            <span class="contact_formItem">Name</span>
+                        </dt>
+                        <dd class="contact_formItem_body">
+                            <input type="text" name="name" class="contact_formItem_input">
+                        </dd>
+                    </dl>
+
+                    <dl class="contact_formItem">
+                        <dt class="contact_formItem_ttl"><span class="contact_formItem">Email</span></dt>
+                        <dd class="contact_formItem_body"><input type="text" name="email"
+                                class="contact_formItem_input">
+                        </dd>
+                    </dl>
+
+                    <dl class="contact_formItem">
+                        <dt class="contact_formItem_ttl"><span class="contact_formItem">Subject</span></dt>
+                        <dd class="contact_formItem_body"><input type="text" name="subject"
+                                class="contact_formItem_input">
+                        </dd>
+                    </dl>
+
+                    <dl class="contact_formItem">
+                        <dt class="contact_formItem_ttl"><span class="contact_formItem">Inquiry Details</span></dt>
+                        <dd class="contact_formItem_body">
+                            <textarea name="details" placeholder cols="30" rows="10"
+                                class="contact_forItem_textarea"></textarea>
+                        </dd>
+                    </dl>
+                    <button type="submit" class="contact_formItem_btn">SUBMIT</button>
+                </form>
+            </section>
+        </div>
+    </div>
 </body>
